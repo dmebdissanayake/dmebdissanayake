@@ -1,0 +1,3 @@
+$(document).ready(function(){function setPageBg(){const bgSection=$('.user-page-section-background');const bgPortrait=bgSection.data('background-image');const bgLandscape=bgSection.data('bg-landscape');if(window.innerWidth>=window.innerHeight&&bgLandscape){bgSection.attr('data-background-image',bgLandscape);}else if(window.innerWidth<window.innerHeight&&bgPortrait){bgSection.attr('data-background-image',bgPortrait);}
+window.lozad().observe();}
+setPageBg();});
